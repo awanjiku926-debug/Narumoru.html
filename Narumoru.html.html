@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Narumoru Repentance and Holiness Church</title>
+
+    <meta name="description" content="Narumoru Repentance and Holiness Church. Join us for worship, prayer, repentance, holiness and fellowship.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            color: #26352a;
+            background: #f7f8f5;
+        }
+
+        header {
+            background: #124526;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 27px;
+        }
+
+        header p {
+            font-size: 14px;
+        }
+
+        nav {
+            background: #0b301a;
+            padding: 14px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 10px;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #164b2b, #398052);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: clamp(30px, 5vw, 48px);
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: 12px auto;
+        }
+
+        .verse {
+            font-style: italic;
+            margin-top: 25px !important;
+        }
+
+        .button {
+            display: inline-block;
+            background: #facc15;
+            color: #173c23;
+            padding: 12px 20px;
+            margin: 12px 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 60px 7%;
+        }
+
+        .section-title {
+            color: #14532d;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .intro {
+            max-width: 750px;
+            text-align: center;
+            margin: 0 auto 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 9px;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        .card h3 {
+            color: #166534;
+            margin-bottom: 10px;
+        }
+
+        #services, #prayer {
+            background: #e9f1e8;
+        }
+
+        .schedule {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 25px;
+        }
+
+        .schedule th, .schedule td {
+            border: 1px solid #c8d8ca;
+            padding: 13px;
+            text-align: left;
+        }
+
+        .schedule th {
+            background: #14532d;
+            color: white;
+        }
+
+        .contact {
+            max-width: 750px;
+            margin: auto;
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        form {
+            max-width: 650px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #b9c9bc;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        .note {
+            font-size: 13px;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        footer {
+            background: #0b301a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #facc15;
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+
+            .schedule th, .schedule td {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>NARUMORU CHURCH</h1>
+        <p>Repentance and Holiness Ministry</p>
+        <p>Church Leader: Bishop Rahab Wangari</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#sermons">Sermons</a>
+        <a href="#prayer">Prayer Requests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <h2>Welcome to Narumoru Church</h2>
+
+            <p>
+                A place to seek the Lord, hear His Word,
+                walk in repentance and grow in holiness.
+            </p>
+
+            <p>
+                Let us prepare our hearts to live according
+                to the Word of God.
+            </p>
+
+            <a href="#services" class="button">
+                Our Services
+            </a>
+
+            <a href="#contact" class="button">
+                Visit Our Church
+            </a>
+
+            <p class="verse">
+                "Follow peace with all men, and holiness,
+                without which no man shall see the Lord."
+            </p>
+
+            <p><strong>Hebrews 12:14</strong></p>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Our Church</h2>
+
+            <p class="intro">
+                Narumoru Repentance and Holiness Church
+                welcomes people to worship God, learn the Bible,
+                seek repentance and grow in faith.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To preach the Word of God, teach genuine
+                        repentance and encourage a life of holiness.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To see lives transformed through Jesus Christ,
+                        prayer, discipleship and faithful service.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Our Faith</h3>
+                    <p>
+                        We believe in Jesus Christ, the authority
+                        of Scripture, salvation and godly living.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Our Church Leader</h3>
+                    <p><strong>Bishop Rahab Wangari</strong></p>
+                    <p>
+                        Serving the church in the work of ministry.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2 class="section-title">Church Services</h2>
+
+            <p class="intro">
+                Join us for worship, prayer, Bible teaching
+                and fellowship.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Sunday Worship</h3>
+                    <p>Every Sunday</p>
+                    <p><strong>6:00 AM – 2:00 PM</strong></p>
+                </div>
+
+                <div class="card">
+                    <h3>Prayer Meetings</h3>
+                    <p>
+                        Come together in prayer and intercession.
+                    </p>
+                    <p>Other times: To be confirmed</p>
+                </div>
+
+                <div class="card">
+                    <h3>Bible Study</h3>
+                    <p>
+                        Learn the Scriptures and grow in faith.
+                    </p>
+                    <p>Schedule: To be confirmed</p>
+                </div>
+
+                <div class="card">
+                    <h3>Repentance and Holiness</h3>
+                    <p>
+                        Biblical teaching on repentance,
+                        obedience and holy living.
+                    </p>
+                    <p>Schedule: To be confirmed</p>
+                </div>
+
+                <div class="card">
+                    <h3>Youth Fellowship</h3>
+                    <p>
+                        Encouraging young people to grow
+                        in faith and godly character.
+                    </p>
+                    <p>Schedule: To be confirmed</p>
+                </div>
+
+                <div class="card">
+                    <h3>Evangelism</h3>
+                    <p>
+                        Sharing the message of Jesus Christ
+                        with the community.
+                    </p>
+                    <p>Schedule: To be confirmed</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 35px; text-align: center;">
+                Weekly Schedule
+            </h3>
+
+            <table class="schedule">
+                <tr>
+                    <th>Day</th>
+                    <th>Program</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Worship Service</td>
+                    <td>6:00 AM – 2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Other days</td>
+                    <td>Prayer and Bible Study</td>
+                    <td>To be confirmed</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="sermons">
+            <h2 class="section-title">Sermons and Live Services</h2>
+
+            <p class="intro">
+                Find biblical teachings and join online services.
+                Official links will be added here.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>The Call to Repentance</h3>
+                    <p>Learn from the Word of God about repentance.</p>
+                    <p>Video link: To be added</p>
+                </div>
+
+                <div class="card">
+                    <h3>Living in Holiness</h3>
+                    <p>
+                        Biblical teaching about a life that honours God.
+                    </p>
+                    <p>Audio or video link: To be added</p>
+                </div>
+
+                <div class="card">
+                    <h3>Online Church Service</h3>
+                    <p>
+                        The official livestream link will be added here.
+                    </p>
+                    <p>Livestream link: To be added</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prayer">
+            <h2 class="section-title">Prayer Requests</h2>
+
+            <p class="intro">
+                You may share a prayer request with the church.
+            </p>
+
+            <form id="prayerForm">
+                <label for="name">Your Name (Optional)</label>
+                <input id="name" type="text"
+                       placeholder="Enter your name">
+
+                <label for="category">Prayer Category</label>
+                <select id="category" required>
+                    <option value="">Choose a category</option>
+                    <option>Personal Prayer</option>
+                    <option>Family</option>
+                    <option>Healing and Comfort</option>
+                    <option>Repentance and Salvation</option>
+                    <option>Thanksgiving</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="message">Prayer Request</label>
+                <textarea id="message" rows="5"
+                          placeholder="Write your request"
+                          required></textarea>
+
+                <button class="button" type="submit">
+                    Prepare Request
+                </button>
+
+                <p id="status" role="status"></p>
+
+                <p class="note">
+                    This is a demonstration form. It does not
+                    send or save your request. A secure submission
+                    service must be connected before publishing.
+                </p>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Our Church</h2>
+
+            <div class="contact">
+                <h3>Narumoru Repentance and Holiness Church</h3>
+
+                <p>
+                    <strong>Church Leader:</strong>
+                    Bishop Rahab Wangari
+                </p>
+
+                <p>
+                    <strong>Location:</strong> Narumoru, Kenya
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    Add the complete official church number
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    Add official church email
+                </p>
+
+                <a class="button"
+                   href="https://www.google.com/maps/search/?api=1&query=Narumoru%2C+Kenya"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Find Narumoru on Maps
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span>
+            Narumoru Repentance and Holiness Church
+        </p>
+        <p>May the Word of God guide our lives.</p>
+        <p><a href="#home">Back to Top</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        document.getElementById("prayerForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                document.getElementById("status").textContent =
+                    "The form is working as a demonstration, " +
+                    "but your request has not been sent or saved.";
+            });
+    </script>
+
+</body>
+</html>
